@@ -188,7 +188,7 @@ function populateChart(data) {
 
 function duration(data) {
   let durations = [];
-
+console.log(durations);
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
       durations.push(exercise.duration);
@@ -197,6 +197,8 @@ function duration(data) {
 
   return durations;
 }
+
+
 
 function calculateTotalWeight(data) {
   let total = [];
