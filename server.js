@@ -14,7 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
+// If deployed use the deployed database. Otherwise use the local mogoHeadlines database
+
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+// Connect to the Mongo DB
 mongoose.connect(MONGODB_URI);
 
 
