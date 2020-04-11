@@ -14,15 +14,19 @@ body,
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #aaa;
   color: #ffffff;
   height: 80px;
   padding: 10px;
   line-height: 3;
   font-size: 1.2rem;
+  opacity: 90%;
 }
 
 a,
@@ -37,11 +41,13 @@ header {
   height: 150px;
   padding-top: 80px;
   text-align: center;
-  font-size: 1.5rem;
+  transform: skewX(-5deg)
 }
 
-header h1 {
-  transform: skewX(-2deg);
+h1 {
+  color: white;
+  font-size: 45pt;
+
 }
 
 select {
@@ -59,6 +65,7 @@ select {
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
+  
 }
 
 select::-ms-expand {
@@ -96,7 +103,6 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
   padding-bottom: 100px;
 }
 
@@ -435,3 +441,11 @@ form > button {
     right: -320px;
   }
 }
+
+#canvas, 
+#canvas2, 
+#canvas3, 
+#canvas4 { 
+  background-color: white;
+  box-shadow: 3px 5px 5px black;
+
